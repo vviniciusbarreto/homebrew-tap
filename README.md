@@ -33,21 +33,23 @@ brew upgrade --cask whatsclean
 
 Update `version` and `sha256` in `Casks/whatsclean.rb` for every release.
 
-## YTDLP Glass
+## UniDownloader
 
-A private native macOS interface for yt-dlp with fixed download options, menu bar drag and drop, bundled FFmpeg/FFprobe, and automatic updates.
+A private native macOS interface for yt-dlp for Apple Silicon, with menu bar URL drops, bundled FFmpeg/FFprobe, and signed automatic updates. Requires macOS Sequoia or later; the cask installs Deno for YouTube JavaScript challenge support. UniDownloader replaces YTDLP Glass and keeps its bundle identifier, so YTDLP Glass 1.0.0 installs update in place through Sparkle.
 
 Install:
 
 ```bash
-brew install --cask vviniciusbarreto/tap/ytdlp-glass
+brew install --cask vviniciusbarreto/tap/uni-downloader
 ```
 
 Upgrade:
 
 ```bash
 brew update
-brew upgrade --cask ytdlp-glass
+brew upgrade --cask uni-downloader
 ```
 
-YTDLP Glass and WhatsClean have separate repositories, releases, casks, and descriptions.
+Update `version` and `sha256` in `Casks/uni-downloader.rb` for every release.
+
+UniDownloader and WhatsClean have separate repositories, releases, casks, and descriptions.
